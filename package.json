@@ -1,6 +1,6 @@
 {
   "name": "@jacksontian/tiny-function",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "My Function Compute framework",
   "main": "lib/tiny.js",
   "directories": {
