@@ -7,9 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test-unit": "mocha -R spec",
     "test": "mocha -R spec test/*.test.js",
-    "test-cov": "c8 -r=lcov -r=html -r=text -r=json npm run test"
+    "test-cov": "c8 -r=lcov -r=html -r=text -r=json npm run test",
+    "lint": "eslint lib test"
   },
   "author": "Jackson Tian",
   "license": "MIT",
@@ -18,10 +18,15 @@
     "httpx": "^2.3.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.30.1",
     "c8": "^8.0.1",
+    "eslint": "^9.30.1",
+    "globals": "^16.3.0",
     "mocha": "^10.2.0"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "engines": {
     "node": ">= 14"
   }
